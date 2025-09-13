@@ -1,0 +1,31 @@
+.hero {
+  width: 100%;
+  max-width: 100%;
+  min-height: 60dvh;
+  color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 1.4rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../../assets/ford-ranger.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.text {
+  width: 45%;
+  min-width: 200px;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
