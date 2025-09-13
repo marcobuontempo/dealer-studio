@@ -16,7 +16,7 @@ const Hero = ({}: Props) => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
-      <Button handleClick={() => null}>Contact Us</Button>
+      <Button onClick={() => null}>Contact Us</Button>
     </section>
   );
 };

@@ -6,18 +6,21 @@ import styles from "./styles.module.css";
 
 type Props = {
   isActive: boolean;
-  handleClick: (event: MouseEvent<HTMLButtonElement>) => void;
+  onButtonClick: (event: MouseEvent<HTMLButtonElement>) => void;
   name: string;
   text: string[];
 };
 
-const Card = ({ isActive, handleClick, name, text }: Props) => {
+const Card = ({ isActive, onButtonClick, name, text }: Props) => {
   return (
-    <article className={`${styles.card} ${isActive && styles.active}`}>
+    <article
+      data-testid="card"
+      className={`${styles.card} ${isActive && styles.active}`}
+    >
       <CardImage />
       <div className={styles.content}>
         <CardBody name={name} text={text} />
-        <Button handleClick={handleClick}>Button {name}</Button>
+        <Button onClick={onButtonClick}>Button {name}</Button>
       </div>
     </article>
   );

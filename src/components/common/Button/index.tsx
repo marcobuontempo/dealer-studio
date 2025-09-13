@@ -2,13 +2,13 @@ import { type MouseEvent, type ReactNode } from "react";
 import styles from "./styles.module.css";
 
 type Props = {
-  handleClick: (event: MouseEvent<HTMLButtonElement>) => void;
+  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
   children: ReactNode;
 };
 
-const Button = ({ handleClick, children }: Props) => {
+const Button = ({ onClick, children }: Props) => {
   return (
-    <button className={styles.button} onClick={handleClick}>
+    <button className={styles.button} onClick={onClick}>
       {children}
     </button>
   );

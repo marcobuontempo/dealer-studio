@@ -1,0 +1,22 @@
+.theme-toggle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
+  color: black;
+  background: white;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.theme-toggle:hover {
+  filter: invert(0.1);
+}
+
+:global(.dark) .theme-toggle {
+  color: white;
+  background: black;
+  border: 2px solid white;
+}
