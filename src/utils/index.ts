@@ -1,5 +1,5 @@
 export const fetchCardsData = async () => {
-  return await fetch("/data/cards.json")
+  return await fetch(`${import.meta.env.BASE_URL}/data/cards.json`)
     .then((res) => res.json())
     .then((data) => {
       // simulate fetching delay

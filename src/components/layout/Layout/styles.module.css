@@ -12,8 +12,10 @@
 
 :global(.light) {
   background: ghostwhite;
+  color: black;
 }
 
 :global(.dark) {
   background: black;
+  color: ghostwhite;
 }
